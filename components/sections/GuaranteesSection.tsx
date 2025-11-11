@@ -66,7 +66,7 @@ export default function GuaranteesSection() {
 
 						<Button
 							className="
-								mt-16 bg-[#ffb700] hover:bg-[#ffcc33] text-black font-medium
+								mt-16 text-black font-medium
 								rounded-xl px-60 py-10 text-lg shadow-md
 								max-md:px-10 max-md:py-4 max-md:text-base
 							"

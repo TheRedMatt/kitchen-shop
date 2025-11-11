@@ -3,10 +3,10 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
-import { useModal } from "@/components/sections/ModalProvider" // добавляем хук
+import { useModal } from "@/components/sections/ModalProvider"
 
 export default function MapSection() {
-	const { openModal } = useModal() // инициализируем модалку
+	const { openModal } = useModal()
 
 	return (
 		<section className="relative w-full bg-[#fffaf3] py-20 px-6 overflow-hidden">
@@ -59,14 +59,14 @@ export default function MapSection() {
 							</div>
 						</div>
 
-						<div className="mt-6">
+						{/* Крупная кнопка */}
+						<div className="mt-8">
 							<Button
-							onClick={openModal}
-							className="w-full sm:w-auto max-w-full bg-[#ffb700] hover:bg-[#ffcc33] text-black font-medium rounded-xl px-6 sm:px-10 py-4 sm:py-5 text-base sm:text-lg text-center transition-colors duration-200"
+								onClick={openModal}
+								className="w-full text-black font-medium rounded-xl px-20 py-8 text-lg sm:text-xl shadow-md"
 							>
-							Book a consultation
+								Book a consultation
 							</Button>
-
 						</div>
 					</CardContent>
 				</Card>
@@ -91,7 +91,6 @@ export default function MapSection() {
 				</div>
 
 				<div className="flex items-center gap-4">
-			
 					<a href="https://t.me/example" target="_blank" rel="noopener noreferrer">
 						<Image src="/images/social/tgicon.svg" alt="Telegram" width={33} height={33} />
 					</a>
