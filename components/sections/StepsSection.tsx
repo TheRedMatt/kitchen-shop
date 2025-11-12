@@ -10,7 +10,7 @@ export default function StepsSection() {
 
 	return (
 		<section className="section bg-white">
-			<h2 className="text-center text-2xl md:text-4xl font-medium text-[#2b2b2b] leading-snug mb-14 col-span-12">
+			<h2 className="mainheading col-span-12 text-center">
 				Only <span className="font-semibold text-black">5 steps</span> — and your brand new kitchen will be ready in just{" "}
 				<span className="font-semibold text-black">14 days</span>
 			</h2>
@@ -18,8 +18,8 @@ export default function StepsSection() {
 			<div className="steps-grid col-span-12">
 
 				{/* Step 1 */}
-				<Card className="step-1 bg-[#1a1a1a] text-white flex flex-col justify-between rounded-2xl p-8 shadow-lg relative">
-					<CardContent className="p-0 relative z-10 flex flex-col h-full justify-between">
+				<Card className="step-1 bg-[#1a1a1a] text-white flex flex-col justify-start rounded-2xl p-8 shadow-lg relative">
+					<CardContent className="p-0 relative z-10 flex flex-col h-full justify-start">
 						<div>
 							<h3 className="font-bold text-xl mb-3">Request a Measurement</h3>
 							<p className="text-sm leading-relaxed">
